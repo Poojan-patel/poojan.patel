@@ -16,7 +16,7 @@
      };
 }
 
-.app .sections  *{
+.app .sections > *{
      width: 100vw;
      height: calc(100vh -  70px);
      border: 1 solid red;
