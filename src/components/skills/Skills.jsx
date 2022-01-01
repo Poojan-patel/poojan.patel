@@ -68,7 +68,7 @@ export default function Skills() {
             <div className="container">
                 {data.map(item=>(
                     <div className="item" id={item.id}>
-                        <img src={item.img+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2mFrxibGfwbpT_Ik6hXYEjA1RJRDi6joN4w&usqp=CAU"} alt="" />
+                        <img src={item.img||"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2mFrxibGfwbpT_Ik6hXYEjA1RJRDi6joN4w&usqp=CAU"} alt="" />
                         <h3>{item.title}</h3>
                     </div>
                 ))}

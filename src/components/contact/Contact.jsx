@@ -16,7 +16,7 @@ export default function Contact(){
      return (
           <div className="contact" id="contact">
                <div className="left">
-                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2mFrxibGfwbpT_Ik6hXYEjA1RJRDi6joN4w&usqp=CAU" alt="" /> 
+                   <img src="http://www.cliqto.com/images/blog/6.jpg?w=750&h=400&mode=crop&scale=both" alt="" /> 
                </div>
                <div className="right">
                     <h2>Contact.</h2>

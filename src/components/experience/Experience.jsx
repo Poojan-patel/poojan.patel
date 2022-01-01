@@ -2,29 +2,35 @@ import React from 'react'
 import "./experience.scss"
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
-import YouTubeIcon from '@material-ui/icons/YouTube';
+import LanguageIcon from '@material-ui/icons/Language';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 export default function Experience() {
 
      const data = [
           {
                id: 1     ,
-               icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2mFrxibGfwbpT_Ik6hXYEjA1RJRDi6joN4w&usqp=CAU",
+               icon: "https://media-exp1.licdn.com/dms/image/C510BAQFBJe8f6rSs8Q/company-logo_200_200/0/1539080791915?e=1649289600&v=beta&t=tx9GiPxxZKT1KviB7JQHMmJ8jPLJtRKICWgH2BQQUbQ",
                cname: "PeanutSquare LLP",
-               desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis recusandae doloremque, perspiciatis pariatur voluptatum consequatur quia",
-               desg: "Software Engineer Intern"
+               desc: "Worked as an Summer Intern for the duration of 6 weeks",
+               desg: "Software Engineer Intern",
+               linkedin: "https://www.linkedin.com/company/peanut-square-llp",
+               site: "https://www.peanutsquare.com/"
           },{
                id: 2,
-               icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2mFrxibGfwbpT_Ik6hXYEjA1RJRDi6joN4w&usqp=CAU",
+               icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn_9aM1kCmOG41JJjxtdV2LJlAliqeLqx3RW0bqXv01YnreWI5sFcbzJkzTnzy2qwb6qc&usqp=CAU",
                cname: "Tekion",
-               desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis recusandae doloremque, perspiciatis pariatur voluptatum consequatur quia",
+               desc: "Joining the company as a Winter Intern and SDE-I",
                desg: "Associate Software Engineer",
-               featured: true
+               featured: true,
+               site: "https://tekion.com/",
+               linkedin: "https://www.linkedin.com/company/tekion",
+
           },{
                id: 3,
-               icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2mFrxibGfwbpT_Ik6hXYEjA1RJRDi6joN4w&usqp=CAU",
+               icon: "https://university-nic.in/wp-content/uploads/Nirma-University.jpg",
                cname: "Center Of Excellence",
-               desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis recusandae doloremque, perspiciatis pariatur voluptatum consequatur quia",
+               desc: "Worked as a Project Intern for 7 months starting from May-2021",
                desg: "Machine Learning Intern"
           }
      ]
@@ -37,9 +43,9 @@ export default function Experience() {
                     {data.map(item=>(
                          <div className={"card " + (item.featured && "featured")}>
                               <div className="top">
-                                   <ArrowBackIosIcon className="left"/>
+                                   <a href={item.site} target="_blank"><LanguageIcon className="left"/></a>
                                    <img className="user" src={item.icon} alt="" />
-                                   <YouTubeIcon className="right" />
+                                   <a href={item.linkedin} target="_blank"><LinkedInIcon className="right" /></a>
                               </div>
                               <div className="center">{item.desc}</div>
                               <div className="bottom">

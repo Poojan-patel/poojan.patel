@@ -113,7 +113,7 @@
                               }
 
                               .imgContainer{
-                                   flex:1;
+                                   
                                   width: 40px;
                                   height: 40px;
                                   border-radius: 50%; 
@@ -129,6 +129,7 @@
 
                                   img{
                                        width: 25px;
+                                       height: 30px;
                                   }
                               }
 
@@ -137,14 +138,15 @@
                                    font-size: 18px;
                               }
                               p{
-                                   flex: 4;
-                                   font-size: 10px;
+                                   flex: 5;
+                                   font-size: 13px;
                               }
-                              span{
+                              .span{
                                    font-size: 12px;
                                    font-weight: 600;
                                    text-decoration: underline;
                                    cursor: pointer ;
+                                   color: black;
                               }
                          }
                     }
@@ -160,7 +162,7 @@
                          img{
                               width: 500px;
                               transform: rotate(-10deg);
-                              height: 900px;
+                              height: 400px;
                               overflow: hidden;
                          }
                     }
