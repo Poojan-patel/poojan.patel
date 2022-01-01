@@ -5,26 +5,50 @@ import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 
 export default function Experience() {
+
+     const data = [
+          {
+               id: 1     ,
+               icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2mFrxibGfwbpT_Ik6hXYEjA1RJRDi6joN4w&usqp=CAU",
+               cname: "PeanutSquare LLP",
+               desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis recusandae doloremque, perspiciatis pariatur voluptatum consequatur quia",
+               desg: "Software Engineer Intern"
+          },{
+               id: 2,
+               icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2mFrxibGfwbpT_Ik6hXYEjA1RJRDi6joN4w&usqp=CAU",
+               cname: "Tekion",
+               desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis recusandae doloremque, perspiciatis pariatur voluptatum consequatur quia",
+               desg: "Associate Software Engineer",
+               featured: true
+          },{
+               id: 3,
+               icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2mFrxibGfwbpT_Ik6hXYEjA1RJRDi6joN4w&usqp=CAU",
+               cname: "Center Of Excellence",
+               desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis recusandae doloremque, perspiciatis pariatur voluptatum consequatur quia",
+               desg: "Machine Learning Intern"
+          }
+     ]
+     
      return (
           <div className="experience" id="experience">
+               
                <h1>Experience</h1>
                <div className="container">
-                    <div className="card">
-                         <div className="top">
-                              <ArrowBackIosIcon />
-                              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2mFrxibGfwbpT_Ik6hXYEjA1RJRDi6joN4w&usqp=CAU" alt="" />
-                              <YouTubeIcon />
-                         </div>
-                         <div className="center">
-                              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae laboriosam, 
-                              ducimus sed quaerat id facilis. Neque animi obcaecati ea 
-                         </div>
-                         <div className="bottom">
-                              <h3>Tekion</h3>
-                              <h4>Associate Software Engineer</h4>
-                         </div>
+                    {data.map(item=>(
+                         <div className={"card " + (item.featured && "featured")}>
+                              <div className="top">
+                                   <ArrowBackIosIcon className="left"/>
+                                   <img className="user" src={item.icon} alt="" />
+                                   <YouTubeIcon className="right" />
+                              </div>
+                              <div className="center">{item.desc}</div>
+                              <div className="bottom">
+                                   <h3>{item.cname}</h3>
+                                   <h4>{item.desg}</h4>
+                              </div>
 
-                    </div>
+                         </div>
+                    ))}
                </div>
           </div>
      )
