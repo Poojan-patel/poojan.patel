@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 .experience{
      background-color: white;
      display: flex;
@@ -9,6 +11,10 @@
           font-size: 50px;
           height: 80px;
           
+          @include mobile{
+               font-size: 30px;
+               height: 40px;
+          }
      }
 
      .container{
@@ -17,6 +23,11 @@
           display: flex;
           align-items: center;
           justify-content: center;
+
+          @include mobile{
+               font-size: 12px;
+               flex-direction: column;
+          }
 
           .card{
                width: 250px;
@@ -29,10 +40,20 @@
                padding: 20px;
                transition: all 0.4s ease;
 
+               @include mobile{
+                    height: 120px;
+               }
+
                &.featured{
                     transform: scaleY(1.05) scaleX(1.05);
                     margin: 0 40px;
                     box-shadow: 0 0 20px 1px grey;
+
+                    @include mobile{
+                         width: 250px;
+                         height: 130px;
+                         margin: 20px 0;
+                    }
                }
 
                &:hover{
@@ -62,7 +83,10 @@
                     padding: 10px;
                     border-radius: 10px;
                     background-color: rgb(252, 216, 224);
-               
+                    
+                    @include mobile{
+                         display: none;
+                    }
                }
 
                .bottom{

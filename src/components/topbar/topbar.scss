@@ -19,6 +19,11 @@
           .left{
                display: flex;
                align-items: center;
+               width: 100%;
+
+               @include mobile{
+                    justify-content: space-between;         
+               }
 
                .logo{
                     font-size: 40px;
@@ -26,25 +31,46 @@
                     text-decoration: none;
                     color: inherit;
                     margin-right: 40px;
-               }
 
-               .itemContainer{
+                    
+               }
+               
+               .details{
                     display: flex;
                     flex-direction: row;
                     align-items: center;
-                    margin-right: 30px;
-
-                    .icon{
-                         font-size: 18px;
-                         margin-right: 5px;
+                    justify-content: center;
+                    
+                    @include mobile{
+                         
+                         flex-direction: column;
+                         
+                         align-items: flex-start;
                     }
 
-                    span{
-                         font-size: 15px;
-                         font-weight: 600;
+                    .itemContainer{
+                         display: flex;
+                         flex-direction: row;
+                         align-items: center;
+                         margin-right: 30px;
+                         justify-content: center; 
+                         
+
+                         .icon{
+                              font-size: 18px;
+                              margin-right: 5px;
+
+                              
+                         }
+
+                         span{
+                              font-size: 15px;
+                              font-weight: 600;
+
+                              
+                         }
                     }
                }
-               
           }
 
           .right{
