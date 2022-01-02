@@ -59,15 +59,17 @@
                          .icon{
                               font-size: 18px;
                               margin-right: 5px;
-
                               
                          }
 
-                         span{
+                         span, a{
                               font-size: 15px;
                               font-weight: 600;
+                         }
 
-                              
+                         a{
+                              text-decoration: none;
+                              color: $mainColor;
                          }
                     }
                }
