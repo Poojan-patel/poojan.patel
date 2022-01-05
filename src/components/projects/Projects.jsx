@@ -18,7 +18,7 @@ export default function Projects() {
                icon: "http://www.atechpdc.com/v2/wp-content/uploads/2018/12/QnA-e1559310173595.jpg",
                title: "DevTalks",
                desc: "Site made especially for the developers who get stuck when bug encountered in everyday life",
-               img: "https://lh3.googleusercontent.com/proxy/EJjK6IvHsz20_YT3r0aSROxhZbeM-cln1Li0ncvD3q59yBIb6y71gFZl8ZfHYOoWoPJhX2Kw-vsuq0YmSSwTB4TwPEXSk4WbuRyOjP1rcS8hgnBp",
+               img: "https://www.elmhurst.edu/wp-content/uploads/2019/11/software-developer-vs-software-engineer-illustration.jpg",
                link: "https://github.com/Poojan-patel/DevTalks"
           },{
                id: 3,
