@@ -1,7 +1,5 @@
 import React from 'react'
 import "./experience.scss"
-import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
-import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import LanguageIcon from '@material-ui/icons/Language';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
@@ -43,9 +41,9 @@ export default function Experience() {
                     {data.map(item=>(
                          <div className={"card " + (item.featured && "featured")}>
                               <div className="top">
-                                   <a href={item.site} target="_blank"><LanguageIcon className="left"/></a>
+                                   <a href={item.site} target="_blank" rel='noreferrer'><LanguageIcon className="left"/></a>
                                    <img className="user" src={item.icon} alt="" />
-                                   <a href={item.linkedin} target="_blank"><LinkedInIcon className="right" /></a>
+                                   <a href={item.linkedin} target="_blank" rel='noreferrer'><LinkedInIcon className="right" /></a>
                               </div>
                               <div className="center">{item.desc}</div>
                               <div className="bottom">

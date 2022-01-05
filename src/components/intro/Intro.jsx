@@ -25,13 +25,13 @@ export default function Intro() {
                          <h1>Poojan Patel</h1>
                          <h3><span ref={textRef}></span></h3>
                     </div>
-                    <a href="#portfolio">
+                    <a href="assets/poojan_patel.pdf" download>
                          <KeyboardArrowDownIcon className="down-arrow" />
                     </a>
                </div>
                <div className="left">
                     <div className="imgContainer">
-                         <img src="assets/download.png" alt=""></img>
+                         <img src="assets/self2.jpeg" alt=""></img>
                     </div>
                </div>
           </div>

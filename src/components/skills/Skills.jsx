@@ -30,14 +30,6 @@ export default function Skills() {
         }
     ]
 
-    const deactivateAll = ()=>{
-        // ls.forEach((item,idx)=>{
-        //     item.button[1](false)
-        //     ls[idx].button[0] = item.button[0];
-        // })
-        console.log("Deactivated All")
-    }
-
     useEffect(()=>{
 
         switch(activated){

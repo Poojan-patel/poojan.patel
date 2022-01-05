@@ -23,21 +23,27 @@
                float: left;
                position: relative;
                justify-content:space-around;
+               overflow: hidden;
 
                @include mobile{
                     align-items: flex-start;
                     justify-content: center;
+
                }
                img{
                     position: absolute;
                     width: 60%;
                     height: 90%;
                     left: 20%;
+                    top: 30%;
+                    transform: scale(2);
                     
                     @include mobile{
                          height: 50%;
                          width: 30%;
                          left: 35%;
+                         top:30%;
+                         transform: scale(3);
                     }
                }
           }

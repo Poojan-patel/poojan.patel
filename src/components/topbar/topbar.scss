@@ -69,7 +69,7 @@
 
                          a{
                               text-decoration: none;
-                              color: $mainColor;
+                              color: inherit;
                          }
                     }
                }
@@ -79,11 +79,13 @@
 
                .hamburger{
                     width: 32px;
+                    padding-right: 15px;
                     display: flex;
                     flex-direction: column;
                     height: 25px;
                     justify-content: space-between;
                     cursor: pointer;
+                    overflow: hidden;
 
                     span{
                          transform-origin: left ;
@@ -103,6 +105,7 @@
          .hamburger{
 
           span{
+               
                &:first-child{
                     background-color: white;
                     transform: rotate(45deg);

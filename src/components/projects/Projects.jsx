@@ -63,7 +63,7 @@ export default function Projects() {
                                       </div>
                                       <h2>{item.title}</h2>
                                       <p>{item.desc}</p>
-                                      <a className="span" href={item.link} target="_blank">Project</a>
+                                      <a className="span" href={item.link} target="_blank" rel='noreferrer'>Project</a>
                                  </div>
                             </div>
                             <div className="right">
