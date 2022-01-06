@@ -28,14 +28,14 @@
                display: flex;
                justify-content: center;
                text-align: center;
-
+               width: 90%;
                @include mobile{
                     flex-wrap: wrap;
-                    justify-content: center;
+                    justify-content: space-evenly;
                }
                
                
-               width: 90%;
+               
           }
 
           .container{

@@ -13,12 +13,14 @@ export default function Contact(){
                </div>
                <div className="right">
                     <h2>Contact.</h2>
-                    <form action="mailto:poojan4004@gmail.com" encType="multipart/form-data">
-                         <input type="text" placeholder="Email" />
-                         <textarea placeholder="Message"></textarea>
-                         <button type="submit" onClick={()=>sentMessage(true)}>Send</button>
-                         {message && <span>Thanks, I'll reply ASAP :)</span>}
-                    </form>
+                    <div className="wrapper">
+                         <form action="mailto:poojan4004@gmail.com" encType="multipart/form-data">
+                              <input type="text" placeholder="Email" />
+                              <textarea placeholder="Message"></textarea>
+                              <button type="submit" onClick={()=>sentMessage(true)}>Send</button>
+                              {message && <span>Thanks, I'll reply ASAP :)</span>}
+                         </form>
+                    </div>
                </div>
           </div>
      )
