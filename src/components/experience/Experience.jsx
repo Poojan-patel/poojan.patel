@@ -8,7 +8,7 @@ export default function Experience() {
      const data = [
           {
                id: 1     ,
-               icon: "https://media-exp1.licdn.com/dms/image/C510BAQFBJe8f6rSs8Q/company-logo_200_200/0/1539080791915?e=1649289600&v=beta&t=tx9GiPxxZKT1KviB7JQHMmJ8jPLJtRKICWgH2BQQUbQ",
+               icon:"https://media-exp1.licdn.com/dms/image/C510BAQFBJe8f6rSs8Q/company-logo_200_200/0/1539080791915?e=2147483647&v=beta&t=eRoRW6Exgbai14_KwvCKgw-bzzksozPwjJ9XwOzMzlA",
                cname: "PeanutSquare LLP",
                desc: "Worked as an Summer Intern for the duration of 6 weeks",
                desg: "Software Engineer Intern",

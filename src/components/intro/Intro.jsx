@@ -25,13 +25,13 @@ export default function Intro() {
                          <h1>Poojan Patel</h1>
                          <h3><span ref={textRef}></span></h3>
                     </div>
-                    <a href="assets/poojan_patel.pdf" download>
+                    <a href="https://drive.google.com/drive/folders/1_ouaWtR-09-EThP9WdOf4GCQXXbFoMCn?usp=sharing" target="_blank"  rel="noreferrer">
                          <KeyboardArrowDownIcon className="down-arrow" />
                     </a>
                </div>
                <div className="left">
                     <div className="imgContainer">
-                         <img src="assets/self2.jpeg" alt=""></img>
+                         <img src="assets/self3.jpg" alt=""></img>
                     </div>
                </div>
           </div>
