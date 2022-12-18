@@ -25,6 +25,7 @@ export default function Intro() {
                          <h1>Poojan Patel</h1>
                          <h3><span ref={textRef}></span></h3>
                     </div>
+                    
                     <a href="https://drive.google.com/drive/folders/1_ouaWtR-09-EThP9WdOf4GCQXXbFoMCn?usp=sharing" target="_blank"  rel="noreferrer">
                          <KeyboardArrowDownIcon className="down-arrow" />
                     </a>
