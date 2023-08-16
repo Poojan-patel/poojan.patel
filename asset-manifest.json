@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/poojan.patel/static/css/main.f245455d.css",
-    "main.js": "/poojan.patel/static/js/main.77931ac4.js",
+    "main.js": "/poojan.patel/static/js/main.921bfe13.js",
     "index.html": "/poojan.patel/index.html",
     "main.f245455d.css.map": "/poojan.patel/static/css/main.f245455d.css.map",
-    "main.77931ac4.js.map": "/poojan.patel/static/js/main.77931ac4.js.map"
+    "main.921bfe13.js.map": "/poojan.patel/static/js/main.921bfe13.js.map"
   },
   "entrypoints": [
     "static/css/main.f245455d.css",
-    "static/js/main.77931ac4.js"
+    "static/js/main.921bfe13.js"
   ]
 }
