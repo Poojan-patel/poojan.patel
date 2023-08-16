@@ -62,7 +62,7 @@ const featuredPortfolio = [
      {
           id: 3,
           title: 'Python',
-          img: 'https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/challenge_thumbnails/001/302/913/datas/original.jpg'
+          img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png'
      },
      {
           id: 4,

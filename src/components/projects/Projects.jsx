@@ -12,7 +12,7 @@ export default function Projects() {
                title: "Hard CodeR",
                desc: "Application which is helpful for practicing coding question topicwise for interviews",
                img: "https://codersera.com/blog/wp-content/uploads/2019/07/BLOG-23-L-3.jpg",
-               link: "http://codeforces-mini-app.herokuapp.com/"
+               link: "https://github.com/Poojan-patel/codeforces-app"
           },{
                id: 2,
                icon: "http://www.atechpdc.com/v2/wp-content/uploads/2018/12/QnA-e1559310173595.jpg",
@@ -63,7 +63,9 @@ export default function Projects() {
                                       </div>
                                       <h2>{item.title}</h2>
                                       <p>{item.desc}</p>
+                                      {item.link &&
                                       <a className="span" href={item.link} target="_blank" rel='noreferrer'>Project</a>
+                                        }
                                  </div>
                             </div>
                             <div className="right">
